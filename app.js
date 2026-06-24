@@ -173,7 +173,7 @@ async function loadCounter(){
   })
 
   counter.textContent =
-  `${count || 0} Wishes Collected 💙`
+  `${count || 0} Wishes Collected `
 
 }
 
