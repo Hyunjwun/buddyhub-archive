@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BUDDYHUB ARCHIVE</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+<div class="browser">
+
+  <div class="browser-top">
+
+    <div class="dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <input
+      class="fake-search"
+      value="BUDDYHUB ARCHIVE"
+      readonly
+    >
+
+  </div>
+
+  <section class="hero">
+
+    <h1>2K and counting. Thank you for growing with us.</h1>
+
+    <p>
+      Every shift, every interaction, every memory helped BuddyHub become what it is today.
+Leave a photo and a message so we can remember this milestone together.
+    </p>
+
+    <div class="hero-buttons">
+
+      <button id="openModal">
+        Add Your Page
+      </button>
+
+    </div>
+
+    <div id="counter">
+      0 Wishes Collected
+    </div>
+
+  </section>
+
+  <section id="gallery">
+  </section>
+
+  <div id="empty">
+    No wishes yet 💙
+  </div>
+
+</div>
+
+<!-- MODAL -->
+
+<div id="modal">
+
+  <div class="modal-content">
+
+    <h2>Leave A Wish</h2>
+
+    <input
+      id="name"
+      maxlength="20"
+      placeholder="Your name"
+    >
+
+    <textarea
+      id="wish"
+      maxlength="150"
+      placeholder="Write your wish..."
+    ></textarea>
+
+    <input
+      type="file"
+      id="photo"
+      accept="image/*"
+    >
+
+    <img
+      id="preview"
+      src=""
+      style="display:none;"
+    >
+
+    <button id="submitBtn">
+      Submit
+    </button>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
